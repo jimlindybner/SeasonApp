@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+}
+
+@{ 
+    // Presents information about the season
+
+    string url = "/Content/Images/" + ViewBag.Season + ".jpg";
+}
+
+<h2>Show</h2>
+
+<p>The temperature is @ViewBag.Temp;</p>
+
+<p>The season is @ViewBag.Season!</p>
+
+<img src="@url" alt="@ViewBag.Season" />
